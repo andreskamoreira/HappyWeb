@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box; 
+}
+
+:root{
+    --blue: #29b6d1 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 2rem;
+}
+
+
+#text{
+    color: #FFFFFF;
+}
+
+#right{
+    display: flex;
+    justify-content: column;
+    color: #FFFFFF;
+}
