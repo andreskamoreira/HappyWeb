@@ -23,13 +23,37 @@ main{
     padding: 2rem;
 }
 
+#left{
+    width: 40%;
+}
 
 #text{
     color: #FFFFFF;
+    font-size: x-large;
 }
 
 #right{
+    width: 60%;
     display: flex;
     justify-content: column;
     color: #FFFFFF;
+}
+
+#picture{
+    width: 70%;
+}
+
+#info{
+    width: 30%;
+}
+
+#localizacao{
+    display: flex;
+    justify-content: column;
+}
+
+#next{
+    display: flex;
+    align-items:end;
+    justify-content: end
 }
