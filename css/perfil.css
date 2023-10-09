@@ -1,0 +1,18 @@
+:root{
+    --cinza: #d3e2e5;
+    --branco: #ffffff;
+    --marinho: #4D6F80;
+}
+
+main{
+    display: flex;
+    background-color: var(--cinza);
+    font-family: 'Nunito', sans-serif;
+}
+
+#container{
+    background-color: var(--branco);
+    padding: 3rem;
+    color: var(--marinho);
+    width: 40%;
+}
