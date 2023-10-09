@@ -25,15 +25,18 @@ main{
 
 #left{
     width: 40%;
-}
-
-#localizacao span {
-    font-weight: bold;
+    padding: 85px 85px 85px 85px;
 }
 
 #text{
+    padding-top: 50px;
     color: #FFFFFF;
     font-size: x-large;
+    line-height: 55px;
+}
+
+#text h1{
+    font-size: 65px;
 }
 
 #right{
@@ -57,6 +60,10 @@ main{
 #localizacao{
     display: flex;
     justify-content: column;
+}
+
+#localizacao span {
+    font-weight: bold;
 }
 
 #next{
