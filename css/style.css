@@ -29,14 +29,20 @@ main{
 }
 
 #text{
-    padding-top: 50px;
+    margin-top: 50px;
     color: #FFFFFF;
     font-size: x-large;
     line-height: 55px;
 }
 
 #text h1{
-    font-size: 65px;
+    font-size: 62px;
+}
+
+#text p{
+    font-size: normal;
+    line-height: 25px;
+    margin-top: 30px;
 }
 
 #right{
@@ -64,6 +70,10 @@ main{
 
 #localizacao span {
     font-weight: bold;
+}
+
+#mapa{
+    margin-left: 10px;
 }
 
 #next{
