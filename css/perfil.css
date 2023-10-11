@@ -9,6 +9,12 @@
     --cinza: #d3e2e5;
     --branco: #ffffff;
     --marinho: #4D6F80;
+    --cinza-claro: #dfdfdf;
+    --back: #D3E2E5;
+    --verde: #37C77F;
+    --verde-claro: #3EE08F;
+    --azul-claro: #B3DAE2;
+    --green: #A1E9C5;
 }
 
 p{
@@ -23,6 +29,7 @@ span{
 #body{
     display: flex;
     background-color: var(--cinza); 
+    height: 100%;
 }
 
 #container{
@@ -30,7 +37,6 @@ span{
     color: var(--marinho);
     margin-left: 400px;
     width: 500px;
-    height: 800px;
     border-radius: 13px;
 }
 
@@ -48,7 +54,37 @@ span{
     margin: 20px 0px;
 }
 
-#button{
-    margin-top: 25px;
-    padding-left: 30px;
+#card-green, 
+#card-blue{
+    width: 200px;
+    height: 130px;
+    border-radius: 8px;
+    padding: 5px;
+    padding-top: 50px;
+    line-height: 5px;
+    border: 2px solid var(--cinza-claro);
+    cursor: pointer;
+}
+
+#card-green{
+    background-color: var(--green);
+}
+
+#card-blue{
+    background-color: var(--azul-claro);
+}
+
+button{
+    margin-left: 40px;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid var(--cinza-claro);
+    width: 80%;  
+    cursor: pointer;  
+}
+
+button:hover{
+    background-color: var(--verde-claro);
 }
