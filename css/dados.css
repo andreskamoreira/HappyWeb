@@ -13,6 +13,7 @@
     --back: #D3E2E5;
     --verde: #37C77F;
     --verde-claro: #3EE08F;
+    --background:  #24b8d0;
 }
 
 main{
@@ -21,10 +22,6 @@ main{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-}
-
-#barra{
-    
 }
 
 #container{
@@ -43,6 +40,18 @@ h3{
 
 p{
     margin-top: 10px;
+}
+
+#barra{
+    background-color: var(--background);
+    width: 60px
+}
+
+#image1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
 }
 
 form{

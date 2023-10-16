@@ -15,6 +15,7 @@
     --verde-claro: #3EE08F;
     --azul-claro: #B3DAE2;
     --green: #A1E9C5;
+    --background:  #24b8d0;
 }
 
 p{
@@ -30,6 +31,18 @@ span{
     display: flex;
     background-color: var(--cinza); 
     height: 100%;
+}
+
+#barra{
+    background-color: var(--background);
+    width: 60px
+}
+
+#image1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
 }
 
 #container{
