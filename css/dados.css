@@ -23,7 +23,7 @@ h3{
 }
 
 p{
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 10px;
 }
 
@@ -77,6 +77,7 @@ label{
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 input, textarea {
@@ -84,9 +85,10 @@ input, textarea {
     width: 100%;
     border-radius: 20px;
     padding: 8px;
+    padding-left: 20px;
     border: 1px solid var(--cinza-claro);
     background-color: var(--back);
-    resize: none
+    resize: none;
 }
 
 #about{
@@ -94,11 +96,13 @@ input, textarea {
 }
 
 #about p{
-    padding-left: 15px
+    padding: 5px 15px 0 15px;
 }
 
 #box-input p{
-    font-size: 12px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #photos{
@@ -146,7 +150,7 @@ input, textarea {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--branco);
+    background-color: var(--cinza);
     -webkit-transition: .4s;
     transition: .4s;    
 }

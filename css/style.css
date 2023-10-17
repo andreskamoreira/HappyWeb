@@ -80,3 +80,14 @@ main{
     display: flex;
     align-items:end;
 }
+
+a{
+    border-radius: 18px;
+    padding: 15px;
+    background-color: #FFD666;
+    text-align: center;
+}
+
+a:hover{
+    background-color: #66f0ff;
+}

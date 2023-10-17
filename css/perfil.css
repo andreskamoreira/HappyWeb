@@ -21,7 +21,7 @@
 }
 
 p{
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 10px;
 }
 
@@ -85,13 +85,16 @@ span{
     justify-content: space-around;
 }
 
+#card p{
+    font-size: 12px;
+}
+
 #card-green, 
 #card-blue{
     width: 165px;
-    height: 130px;
+    height: 120px;
     border-radius: 8px;
-    padding: 5px;
-    padding-top: 20px;
+    padding: 18px;
     line-height: 5px;
     cursor: pointer;
 }
@@ -103,7 +106,7 @@ span{
 
 #card-blue{
     background-image: linear-gradient(to bottom, #e6f7fb, #eef8fe, #f5faff, #fbfcff, #ffffff);
-    border: 1px sollid var(--border-azul);
+    border: 1px solid var(--border-azul);
 }
 
 #contact{
@@ -119,4 +122,15 @@ span{
 
 #contact:hover{
     background-color: var(--verde-claro);
+}
+
+#past{
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #12AFCB;
+    text-align: center;
+}
+
+#past:hover{
+    background-color: #14bed1;
 }
