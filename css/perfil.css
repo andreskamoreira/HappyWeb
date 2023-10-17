@@ -102,6 +102,7 @@ span{
 #card-green{
     background-image: linear-gradient(to bottom, #edfff6, #eeffff, #f5ffff, #fcfeff, #ffffff);
     border: 1px solid var(--border-verde);
+    color: var(--verde-claro);
 }
 
 #card-blue{
@@ -110,14 +111,14 @@ span{
 }
 
 #contact{
-    margin-left: 40px;
+    margin-left: 40px; 
     background-color: var(--verde);
     color: var(--branco);
     border-radius: 8px;
-    padding: 8px;
+    padding: 8px; 
     border: 2px solid var(--cinza-claro);
     width: 80%;  
-    cursor: pointer;  
+    cursor: pointer; 
 }
 
 #contact:hover{

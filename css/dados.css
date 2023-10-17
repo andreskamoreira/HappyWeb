@@ -86,9 +86,14 @@ input, textarea {
     border-radius: 20px;
     padding: 8px;
     padding-left: 20px;
-    border: 1px solid var(--cinza-claro);
+    border: 1px solid var(--cinza);
     background-color: var(--back);
     resize: none;
+}
+
+input:focus, textarea:focus{
+    border: 1px solid var(--verde-claro);
+    outline: none;
 }
 
 #about{
@@ -179,4 +184,14 @@ input, textarea {
     -webkit-transform: translateX(26px); 
     transform: translateX(26px);
 }
-  
+
+#past{
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #12AFCB;
+    text-align: center;
+}
+
+#past:hover{
+    background-color: #14bed1;
+}
