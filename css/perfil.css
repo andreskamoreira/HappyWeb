@@ -98,12 +98,12 @@ span{
 
 #card-green{
     background-image: linear-gradient(to bottom, #edfff6, #eeffff, #f5ffff, #fcfeff, #ffffff);
-    border: var(--border-verde);
+    border: 1px solid var(--border-verde);
 }
 
 #card-blue{
-    background-color: var(--azul-claro);
-    border: var(--border-azul);
+    background-image: linear-gradient(to bottom, #e6f7fb, #eef8fe, #f5faff, #fbfcff, #ffffff);
+    border: 1px sollid var(--border-azul);
 }
 
 #contact{
