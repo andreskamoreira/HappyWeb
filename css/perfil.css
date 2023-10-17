@@ -97,7 +97,7 @@ span{
 }
 
 #card-green{
-    background-color: var(--green);
+    background-image: linear-gradient(to right top, #edfff6, #eeffff, #f5ffff, #fcfeff, #ffffff);
     border: var(--border-verde);
 }
 
