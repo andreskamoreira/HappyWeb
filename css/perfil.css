@@ -81,17 +81,17 @@ span{
 
 #card{
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 0px;   
+    justify-content: space-around;
 }
 
 #card-green, 
 #card-blue{
-    width: 200px;
+    width: 165px;
     height: 130px;
     border-radius: 8px;
     padding: 5px;
-    padding-top: 50px;
+    padding-top: 20px;
     line-height: 5px;
     cursor: pointer;
 }

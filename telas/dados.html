@@ -24,13 +24,15 @@
                     <input type="text" name="name"/>
                 </div>   
                 <div id="box-input">
-                    <label for="about">Sobre</label>
-                    <p>Máximo de 300 caracteres</p>
+                    <div id="about">
+                        <label for="about">Sobre</label>
+                        <p>Máximo de 300 caracteres</p>
+                    </div>
                     <textarea name="about" id="about" rows="5" cols="30" maxlength="300"></textarea> 
                 </div>
                 <div id="box-input">
-                    <label for="numer">Número de Whatsapp</label>
-                    <input type="text" name="numer" id="number">
+                    <label for="number">Número de Whatsapp</label>
+                    <input type="number" name="numer" id="number">
                 </div>
             </form>
             <h3>Visitação</h3>
@@ -41,10 +43,15 @@
                 </div>
                 <div id="box-input">
                     <label for="time">Horário das visitas</label>
-                    <input type="text"/>
+                    <input type="number"/>
                 </div>
-                <p>Atende fim de semana?</p>
-
+                <div id="tag">
+                    <p>Atende fim de semana?</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>  
             </form>
             <button id="contact">Confirmar</button>
         </div>
