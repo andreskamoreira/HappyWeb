@@ -13,7 +13,18 @@
     --back: #D3E2E5;
     --verde: #37C77F;
     --verde-claro: #3EE08F;
+    --azul-claro: #B3DAE2;
+    --green: #A1E9C5;
     --background:  #24b8d0;
+}
+
+h3{
+    margin-left: 40px;
+}
+
+p{
+    font-size: 17px;
+    padding-top: 10px;
 }
 
 main{
@@ -34,17 +45,21 @@ main{
     margin-bottom: 12px;
 }
 
-h3{
-    margin-left: 40px;
-}
-
-p{
-    margin-top: 10px;
-}
-
 #barra{
     background-color: var(--background);
-    width: 60px
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+#past{
+    background-color: var(--background);
+    border: none;
+    cursor: pointer;
 }
 
 #image1{
@@ -83,7 +98,7 @@ input, textarea {
   align-items: end;  
 }
 
-button{
+#contact{
     margin-left: 40px;
     background-color: var(--verde);
     color: var(--branco);
@@ -94,7 +109,7 @@ button{
     cursor: pointer;  
 }
 
-button:hover{
+#contact:hover{
     background-color: var(--verde-claro);
 }
 
