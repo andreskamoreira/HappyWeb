@@ -1,4 +1,3 @@
-//Seleção de elementos
 const form = document.querySelector("form");
 const name = document.querySelector("#name");
 const about = document.querySelector("#sobre");
@@ -9,6 +8,6 @@ const sendBtn = document.querySelector("#contact");
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    console.log("Enviado!");  
+
+    console.log(e);  
 });
