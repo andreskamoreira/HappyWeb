@@ -115,10 +115,17 @@ span{
     background-color: var(--verde);
     color: var(--branco);
     border-radius: 8px;
-    padding: 8px; 
+    padding: 6px;  
     border: 2px solid var(--cinza-claro);
     width: 80%;  
     cursor: pointer; 
+    display: flex;      
+    align-items: center;
+    justify-content: center;
+}
+
+#contact img{
+    margin-right: 10px;
 }
 
 #contact:hover{
@@ -134,4 +141,8 @@ span{
 
 #past:hover{
     background-color: #14bed1;
+}
+
+a{
+    text-decoration: none;
 }
