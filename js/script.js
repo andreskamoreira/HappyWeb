@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 const nameInput = document.querySelector("#name");
-const aboutInput = document.querySelector("#sobre");
+const about = document.querySelector("#sobre");
 const number = document.querySelector("#number");
 const instruction = document.querySelector("#instruction");
 const time = document.querySelector("#time");
@@ -9,39 +9,90 @@ const sendBtn = document.querySelector("#contact");
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    checkname();  
-    checkabout();
-    // checknumber();
-    // checkinstruction();
-    // checktime();
+    checkForm();
+
 });
 
 function checkname() {
     const nameValue = nameInput.value;
 
-   console.log(nameValue);
+       if(nameValue === "") {
+        errorInput(nameInput, "Campo Obrigatório!")
+    } else {
+        const formItem = nameInput.parentElement;
+        formItem.className = "box-input"
+    }
 };
 
 function checkabout() {
-    const aboutInputValue = aboutInput.value;
+    const aboutValue = about.value;
 
-   console.log(aboutInputValue);
+    if(aboutValue === "") {
+        errorInput(about, "Campo Obrigatório!")
+    } else {
+        const formItem = about.parentElement;
+        formItem.className = "box-input"
+    }
 };
+
 
 function checknumber() {
     const numberValue = number.value;
 
-   console.log(numberValue);
+    if(numberValue === "") {
+        errorInput(number, "Campo Obrigatório!")
+    } else {
+        const formItem = number.parentElement;
+        formItem.className = "box-input"
+    }
 };
 
 function checkinstruction() {
     const instructionValue = instruction.value;
 
-   console.log(instructionValue);
+    if(instructionValue === "") {
+        errorInput(instruction, "Campo Obrigatório!")
+    } else {
+        const formItem = instruction.parentElement;
+        formItem.className = "box-input"
+    }
 };
 
 function checktime() {
     const timeValue = time.value;
 
-   console.log(timeValue);
+    if(timeValue === "") {
+        errorInput(time, "Campo Obrigatório!")
+    } else {
+        const formItem = time.parentElement;
+        formItem.className = "box-input"
+    }
+};
+
+function checkForm() {
+  
+    checkname();
+    checkabout();
+    checknumber();
+    checkinstruction();
+    checktime();
+
+
+    const formItems = form.querySelectorAll(".box-input");
+
+    const isValid = [...formItems].every((item) => {
+        return item.className === "box-input"
+    });
+
+    if(isValid){
+        alert("Cadastrado com sucesso!")
+    }
+}
+
+function errorInput(input, message){
+    const formItem = input.parentElement;
+    const textMessage = formItem.querySelector("#a")
+   
+    textMessage.innerText = message;
+    formItem.className = "box-input error"
 };
