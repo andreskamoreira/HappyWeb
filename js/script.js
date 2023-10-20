@@ -11,6 +11,8 @@ form.addEventListener('submit', (e) => {
 
     checkForm();
 
+    console.log(enviarform());
+
 });
 
 function checkname() {
@@ -77,7 +79,6 @@ function checkForm() {
     checkinstruction();
     checktime();
 
-
     const formItems = form.querySelectorAll(".box-input");
 
     const isValid = [...formItems].every((item) => {
@@ -87,7 +88,7 @@ function checkForm() {
     if(isValid){
         alert("Cadastrado com sucesso!")
     }
-}
+};
 
 function errorInput(input, message){
     const formItem = input.parentElement;
@@ -95,4 +96,23 @@ function errorInput(input, message){
    
     textMessage.innerText = message;
     formItem.className = "box-input error"
+};
+
+function enviarform(){
+
+    var nameValue = document.querySelector("#name").value;
+    var aboutValue = document.querySelector("#sobre").value;
+    var numberValue = document.querySelector("#number").value;
+    var instructionValue = document.querySelector("#instruction").value;
+    var timeValue = document.querySelector("#time").value;
+
+    const formValue = {                                 
+        name: nameValue,
+        about: aboutValue,
+        phone: numberValue,
+        instruction: instructionValue,
+        schedule: timeValue,
+    };
+
+    return formValue;
 };
