@@ -16,6 +16,7 @@
     --azul-claro: #B3DAE2;
     --green: #A1E9C5;
     --background:  #24b8d0;
+    --red: #d30e0e;
 }
 
 h3{
@@ -40,9 +41,7 @@ main{
     color: var(--marinho);
     width: 400px;
     border-radius: 13px;
-    padding-top: 20px;
-    margin-top: 12px; 
-    margin-bottom: 12px;
+    padding-top: 10px;
 }
 
 #barra{
@@ -104,7 +103,7 @@ input:focus, textarea:focus{
     padding: 5px 15px 0 15px;
 }
 
-#box-input p{
+.box-input p{
     font-size: 10px;
     display: flex;
     align-items: center;
@@ -194,4 +193,14 @@ input:focus, textarea:focus{
 
 #past:hover{
     background-color: #14bed1;
+}
+
+#a{
+    color: var(--red);
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.box-input.error #a{
+    visibility: visible;
 }

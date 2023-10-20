@@ -24,29 +24,34 @@
         <div id="container">
             <form action="submit" id="form">
                 <h3>Dados</h3>
-                <div id="box-input">
+                <div class="box-input">
                     <label>Nome</label>
-                    <input type="text" id="name" />
-                </div>
-                <div id="box-input">
+                    <input type="text" name="name" id="name"/>
+                    <a id="a">Campo Obrigatório!</a>
+                </div>   
+                <div class="box-input">
                     <div id="about">
                         <label>Sobre</label>
                         <p>Máximo de 300 caracteres</p>
                     </div>
-                    <textarea id="about" rows="5" cols="30" maxlength="300" id="sobre"></textarea>
+                    <textarea name="about" rows="5" cols="30" maxlength="300" id="sobre"></textarea> 
+                    <a id="a">Campo Obrigatório!</a>
                 </div>
-                <div id="box-input">
+                <div class="box-input">
                     <label>Número de Whatsapp</label>
-                    <input type="number" id="number">
+                    <input type="number" name="number" id="number">
+                    <a id="a">Campo Obrigatório!</a>
                 </div>
                 <h3>Visitação</h3>
-                <div id="box-input">
+                <div class="box-input">
                     <label>Instruções</label>
-                    <textarea id="instruction" rows="5" cols="30" maxlength="300"></textarea>
+                    <textarea name="about" id="instruction" rows="5" cols="30" maxlength="300"></textarea>
+                    <a id="a">Campo Obrigatório!</a> 
                 </div>
-                <div id="box-input">
+                <div class="box-input">
                     <label>Horário das visitas</label>
-                    <input type="number" id="time" />
+                    <input type="text" id="time"/>
+                    <a id="a">Campo Obrigatório!</a>
                 </div>
                 <div id="tag">
                     <p>Atende fim de semana?</p>
@@ -54,9 +59,9 @@
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
-                </div>
-                <button type="submit" id="contact">Confirmar</button>
-            </form>
+                </div> 
+                <button type="submit" id="contact">Confirmar</button> 
+            </form> 
         </div>
     </main>
 </body>
