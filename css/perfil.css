@@ -34,13 +34,14 @@ span{
     background-color: var(--cinza); 
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #container{
     background-color: var(--branco);
     color: var(--marinho);
     width: 400px;
+    height: 100%;
     border-radius: 13px;
     margin-top: 12px; 
     margin-bottom: 12px;
@@ -76,7 +77,7 @@ span{
 }
 
 #visit{
-    padding: 20px 25px;
+    padding: 20px 25px 0px 20px;
 }
 
 #card{
@@ -115,7 +116,7 @@ span{
     background-color: var(--verde);
     color: var(--branco);
     border-radius: 8px;
-    padding: 6px;  
+    padding: 6px;
     border: 2px solid var(--cinza-claro);
     width: 80%;  
     cursor: pointer; 
