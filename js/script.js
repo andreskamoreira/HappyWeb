@@ -117,3 +117,24 @@ function enviarform(){
     return formValue;
 };
 
+number.addEventListener("input", () => {
+    var limparValor = number.value.replace(/\D/g, "" ).substring(0,11);
+
+    var numerosArray = limparValor.split("");
+
+    var numeroFormato = "";
+
+    if(numerosArray.length > 0) {
+        numeroFormato += `(${numerosArray.slice(0,2).join("")})`;
+    }
+
+    if(numerosArray.length > 2) {
+        numeroFormato += ` ${numerosArray.slice(2,7).join("")}`;
+    }
+
+    if(numerosArray.length > 7) {
+        numeroFormato += `-${numerosArray.slice(7,11).join("")}`;
+    }
+
+    number.value = numeroFormato
+})
