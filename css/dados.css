@@ -204,3 +204,49 @@ input:focus, textarea:focus{
 .box-input.error #a{
     visibility: visible;
 }
+
+@media (max-width: 376px){
+
+    main{
+        height: 100%;
+    }
+
+    #container{
+        width: 300px;
+        margin-left: 60px;
+        height: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 415px){
+
+    #container{
+        width: 295px;
+        margin-left: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 80%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 2px;
+    }
+   
+}
+
+@media (max-width: 361px){
+
+    body{
+        height: 100vh;
+    }
+
+    #container{
+        height: 95%;
+    }
+}

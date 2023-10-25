@@ -34,14 +34,15 @@ span{
     background-color: var(--cinza); 
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 #container{
     background-color: var(--branco);
     color: var(--marinho);
     width: 400px;
-    border-radius: 13px;
+    height: 100%;
+    border-radius: 8px;
     margin-top: 12px; 
     margin-bottom: 12px;
 }
@@ -76,7 +77,7 @@ span{
 }
 
 #visit{
-    padding: 20px 25px;
+    padding: 20px 25px 0px 20px;
 }
 
 #card{
@@ -115,7 +116,7 @@ span{
     background-color: var(--verde);
     color: var(--branco);
     border-radius: 8px;
-    padding: 6px;  
+    padding: 6px;
     border: 2px solid var(--cinza-claro);
     width: 80%;  
     cursor: pointer; 
@@ -145,4 +146,59 @@ span{
 
 a{
     text-decoration: none;
+}
+
+#slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+#slides{
+    height: 300px;
+    display: flex;
+    position: center;
+}
+
+#slides input{
+    display: none;
+}
+
+#manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+#manual-btn{
+    border: 2px solid var(--branco);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#manual-btn:hover{
+    background-color: var(--branco);
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~.first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~.first{
+    margin-left: -75%;
 }
